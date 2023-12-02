@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 120050646}
   - component: {fileID: 120050645}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,7 +277,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 99999
+  m_Text: '99999
+
+'
 --- !u!222 &120050646
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -605,6 +607,7 @@ MonoBehaviour:
   - {fileID: 9122844748726463690, guid: daa935756f2c1fa4e8e34a665377ebcd, type: 3}
   - {fileID: 9122844748726463690, guid: e436b66d74c9d5448a6cf4156f368f36, type: 3}
   seedPosition: {fileID: 1556775370}
+  txtScore: {fileID: 120050645}
 --- !u!4 &922249965
 Transform:
   m_ObjectHideFlags: 0
@@ -632,7 +635,7 @@ GameObject:
   - component: {fileID: 964527434}
   - component: {fileID: 964527433}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Label(SCORE)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
