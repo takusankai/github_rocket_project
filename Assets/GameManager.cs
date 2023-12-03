@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text txtScore;
 
     private int totalscore;
+
+    //DiseRollManegerを取得
+    [SerializeField] public GameObject DiseRollManeger;
     void Start()
     {
         Instance = this;
@@ -44,7 +47,16 @@ public class GameManager : MonoBehaviour
         seedIns.isDrop = true;
         seedIns.GetComponent<Rigidbody2D>().simulated = true;
         seedIns.gameObject.SetActive(true);
-        totalscore += (int)Mathf.Pow(3, seedNo);
+
+        //ダイスロールして点数を変更
+
+        DiseRollScript.Instance.NextRoll = true;
+        int getdicenum = 0;
+
+        
+        //ダイスロール関係処理ここまで
+
+        totalscore += (int)Mathf.Pow(3, seedNo) * getdicenum;
         SetScore(totalscore);
 
     }

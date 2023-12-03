@@ -6,10 +6,13 @@ public class DiseRollScript : MonoBehaviour
 {
     public bool NextRoll { get; set; }
     [SerializeField] private GameObject[] DicePrefab;
-    [SerializeField] private Transform DicePosition; 
+    [SerializeField] private Transform DicePosition;
+
+    public static DiseRollScript Instance { get; private set; }
     void Start()
     {
-        NextRoll = true;
+        Instance = this;
+        NextRoll = false;
     }
 
     void Update()
@@ -25,6 +28,7 @@ public class DiseRollScript : MonoBehaviour
     {
         int i = Random.Range(0, 5);
         Instantiate(DicePrefab[i], DicePosition);
-        NextRoll = true;
+
+        //NextRoll = true;
     }
 }

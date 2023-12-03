@@ -5,7 +5,7 @@ using UnityEngine;
 public class dice : MonoBehaviour
 {
     void Start()
-    {
+    {   
         Invoke("Disappear", 0.7f);
     }
 
