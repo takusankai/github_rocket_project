@@ -356,6 +356,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &342108989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 342108991}
+  - component: {fileID: 342108990}
+  m_Layer: 0
+  m_Name: DiceRolllManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &342108990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342108989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b454d876388ae4689a5a352b7cc8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DicePrefab:
+  - {fileID: 2943426816974136483, guid: faa5770f3847cf5449bb7f4b5c39f63d, type: 3}
+  - {fileID: 2943426816974136483, guid: f806ce2044f4ed8488ae77d8232438f7, type: 3}
+  - {fileID: 2943426816974136483, guid: 425feab111938284e90f896a8858514b, type: 3}
+  - {fileID: 2943426816974136483, guid: 114e6757f6f339848b42efee1ffef5bf, type: 3}
+  - {fileID: 2943426816974136483, guid: 6578bfdef87a5d74cb4b3fa8fd68821c, type: 3}
+  - {fileID: 2943426816974136483, guid: 45959d8324ebd8b47ba7ec54d15eff42, type: 3}
+  DicePosition: {fileID: 342108991}
+--- !u!224 &342108991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342108989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 8, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &667987482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,3 +1343,4 @@ SceneRoots:
   - {fileID: 1556775370}
   - {fileID: 1712439850}
   - {fileID: 320996238}
+  - {fileID: 342108991}
