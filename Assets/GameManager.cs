@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
         //{
         //    Invoke("aaa",0.5f);
         //}
-        getdicenum = DiseRollScript.Instance.ForculcNum;
+        getdicenum = DiseRollScript.Instance.ForculcNum + 1;
         Debug.Log(getdicenum);
 
         //ダイスロール関係処理ここまで
