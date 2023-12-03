@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2353919952706076958}
   - component: {fileID: 7087397067394062671}
   - component: {fileID: 9122844748726463690}
+  - component: {fileID: -8283088655625066573}
+  - component: {fileID: 6573311895943003543}
   m_Layer: 0
   m_Name: seed1
   m_TagString: seed
@@ -76,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bd1924ea6b349443832a43239daf984, type: 3}
   m_Color: {r: 0.797753, g: 0.8867924, b: 0.5730687, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -164,3 +166,32 @@ MonoBehaviour:
   isMergeFlag: 0
   isDrop: 0
   seedNo: 0
+--- !u!114 &-8283088655625066573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6068132699118048278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceccc82109aac3b4aab4de6fc4dd6cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMergeFlag: 0
+  isDrop: 0
+  seedNo: 0
+--- !u!114 &6573311895943003543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6068132699118048278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad44fc72cbdca254a9c81a2260054ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seedPrefab: []
+  seedPosition: {fileID: 0}

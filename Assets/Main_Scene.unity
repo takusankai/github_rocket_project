@@ -559,6 +559,7 @@ MonoBehaviour:
   - {fileID: 9122844748726463690, guid: 29e69199edd5a4a44a0440571f87ba21, type: 3}
   - {fileID: 9122844748726463690, guid: 14c104a4d0634494aa3731399a824cf0, type: 3}
   - {fileID: 9122844748726463690, guid: daa935756f2c1fa4e8e34a665377ebcd, type: 3}
+  - {fileID: 9122844748726463690, guid: e436b66d74c9d5448a6cf4156f368f36, type: 3}
   seedPosition: {fileID: 1556775370}
 --- !u!4 &922249965
 Transform:
