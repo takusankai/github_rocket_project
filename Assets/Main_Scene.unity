@@ -807,6 +807,7 @@ MonoBehaviour:
   - {fileID: 9122844748726463690, guid: e436b66d74c9d5448a6cf4156f368f36, type: 3}
   seedPosition: {fileID: 1556775370}
   txtScore: {fileID: 120050645}
+  DiseRollManeger: {fileID: 342108989}
 --- !u!4 &922249965
 Transform:
   m_ObjectHideFlags: 0

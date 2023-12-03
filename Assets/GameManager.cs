@@ -14,8 +14,10 @@ public class GameManager : MonoBehaviour
 
     private int totalscore;
 
-    //DiseRollManegerを取得
+    //DiseRollManeger系の変数の取得
     [SerializeField] public GameObject DiseRollManeger;
+    [SerializeField] public int getdicenum;
+
     void Start()
     {
         Instance = this;
@@ -51,14 +53,27 @@ public class GameManager : MonoBehaviour
         //ダイスロールして点数を変更
 
         DiseRollScript.Instance.NextRoll = true;
-        int getdicenum = 0;
+        //while (DiseRollScript.Instance.culcOK)
+        //{
+        //    Invoke("aaa",0.5f);
+        //}
+        getdicenum = DiseRollScript.Instance.ForculcNum;
+        Debug.Log(getdicenum);
 
-        
         //ダイスロール関係処理ここまで
 
         totalscore += (int)Mathf.Pow(3, seedNo) * getdicenum;
         SetScore(totalscore);
+    }
 
+    //IEnumerator<float> MyLoop()
+    //{
+    //    yield return new WaitForSeconds(0.2f);
+    //}
+
+    private void aaa()
+    {
+        Debug.Log("aaa");
     }
 
     private void SetScore(int score)

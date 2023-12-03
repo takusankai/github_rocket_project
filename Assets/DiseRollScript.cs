@@ -8,12 +8,18 @@ public class DiseRollScript : MonoBehaviour
     [SerializeField] private GameObject[] DicePrefab;
     [SerializeField] private Transform DicePosition;
 
+    public bool culcOK;
+    public int ForculcNum;
+
     public static DiseRollScript Instance { get; private set; }
     void Start()
     {
         Instance = this;
         NextRoll = false;
-    }
+
+        culcOK = false;
+        ForculcNum = 0;
+}
 
     void Update()
     {
@@ -26,9 +32,9 @@ public class DiseRollScript : MonoBehaviour
 
     void Roll()
     {
-        int i = Random.Range(0, 5);
-        Instantiate(DicePrefab[i], DicePosition);
-
+        ForculcNum = Random.Range(0, 5);
+        Instantiate(DicePrefab[ForculcNum], DicePosition);
+        culcOK = true;
         //NextRoll = true;
     }
 }
