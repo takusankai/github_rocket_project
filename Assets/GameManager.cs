@@ -1,16 +1,25 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    
     public bool isNext { get; set; }
     public int MaxSeedNo { get; private set; }
+
     [SerializeField] private seed[] seedPrefab;
     [SerializeField] private Transform seedPosition;
+    [SerializeField] private Text txtScore;
+
+    private int totalscore;
     void Start()
     {
         Instance = this;
         isNext = false;
         MaxSeedNo = seedPrefab.Length;
+        totalscore = 0;
+        SetScore(totalscore);
         CreateSeed();
     }
     void Update()
@@ -35,5 +44,14 @@ public class GameManager : MonoBehaviour
         seedIns.isDrop = true;
         seedIns.GetComponent<Rigidbody2D>().simulated = true;
         seedIns.gameObject.SetActive(true);
+        totalscore += (int)Mathf.Pow(3, seedNo);
+        SetScore(totalscore);
+
     }
+
+    private void SetScore(int score)
+    {
+        txtScore.text = score.ToString();
+    }
+
 }
